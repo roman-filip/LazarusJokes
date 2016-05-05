@@ -1,0 +1,119 @@
+﻿@model RFI.LazarusJokes.Web.Models.JokesViewModel
+
+@{
+    ViewBag.Title = "Lazarské vtipy";
+}
+
+@using (Html.BeginForm("AddJoke", "LazarusJokes", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+    <h4>Přidat vtip</h4>
+
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group">
+        @Html.LabelFor(model => model.NewJoke.Author, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.NewJoke.Author, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.NewJoke.Author, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.NewJoke.Date, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.NewJoke.Date, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.NewJoke.Date, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.NewJoke.JokeText, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.NewJoke.JokeText, new { htmlAttributes = new { @class = "form-control", style = "height:150px; max-width: 800px" } })
+            @Html.ValidationMessageFor(model => model.NewJoke.JokeText, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" class="btn btn-default" value="Přidat vtip" />
+        </div>
+    </div>
+
+    <hr />
+}
+
+<h4>Seznam vtipů</h4>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NewJoke.Author)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NewJoke.Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NewJoke.JokeText)
+        </th>
+        <th>Nejslabší<br />(1)</th>
+        <th>Slabý<br />(2)</th>
+        <th>Ujde<br />(3)</th>
+        <th>Dobrý<br />(4)</th>
+        <th>Nejlepší<br />(5)</th>
+        <th>
+            @Html.DisplayNameFor(model => model.NewJoke.TotalVote)
+        </th>
+    </tr>
+
+    @foreach (var joke in Model.Jokes)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(_ => joke.Author)
+            </td>
+            <td>
+                @Html.DisplayFor(_ => joke.Date)
+            </td>
+            <td>
+                @Html.Raw(Html.DisplayFor(_ => joke.JokeText).ToString().Replace("\n", "<br />"))
+            </td>
+            <td>
+                @Html.RadioButtonFor(_ => joke.UserVote, 1, new { @Name = joke.Id, @class = "classname" })
+            </td>
+            <td>
+                @Html.RadioButtonFor(_ => joke.UserVote, 2, new { @Name = joke.Id, @class = "classname" })
+            </td>
+            <td>
+                @Html.RadioButtonFor(_ => joke.UserVote, 3, new { @Name = joke.Id, @class = "classname" })
+            </td>
+            <td>
+                @Html.RadioButtonFor(_ => joke.UserVote, 4, new { @Name = joke.Id, @class = "classname" })
+            </td>
+            <td>
+                @Html.RadioButtonFor(_ => joke.UserVote, 5, new { @Name = joke.Id, @class = "classname" })
+            </td>
+            <td>
+                <strong>@Html.DisplayFor(_ => joke.TotalVote)</strong>
+            </td>
+        </tr>
+    }
+</table>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.classname').click(function () {
+                var rbChecked = $(this).prop('checked');
+                var jokeId = $(this).prop('name');
+                var userVote = $(this).val();
+
+                if (rbChecked) {
+                    window.location.href = '@Html.Raw("/LazarusJokes/VoteForJoke?jokeId='+jokeId+'&userVote='+userVote");
+                }
+            });
+        });
+    </script>
+}
