@@ -68,6 +68,14 @@
 
     @foreach (var joke in Model.Jokes)
     {
+        var htmlAttributes = new Dictionary<string, object>();
+        htmlAttributes.Add("Name", joke.Id);
+        htmlAttributes.Add("class", "classname");
+        if (joke.VotingClosed == true)
+        {
+            htmlAttributes.Add("disabled", "disabled");
+        }
+
         <tr>
             <td>
                 @Html.DisplayFor(_ => joke.Author)
@@ -79,19 +87,19 @@
                 @Html.Raw(Html.DisplayFor(_ => joke.JokeText).ToString().Replace("\n", "<br />"))
             </td>
             <td>
-                @Html.RadioButtonFor(_ => joke.UserVote, 1, new { @Name = joke.Id, @class = "classname" })
+                @Html.RadioButtonFor(_ => joke.UserVote, 1, htmlAttributes)
             </td>
             <td>
-                @Html.RadioButtonFor(_ => joke.UserVote, 2, new { @Name = joke.Id, @class = "classname" })
+                @Html.RadioButtonFor(_ => joke.UserVote, 2, htmlAttributes)
             </td>
             <td>
-                @Html.RadioButtonFor(_ => joke.UserVote, 3, new { @Name = joke.Id, @class = "classname" })
+                @Html.RadioButtonFor(_ => joke.UserVote, 3, htmlAttributes)
             </td>
             <td>
-                @Html.RadioButtonFor(_ => joke.UserVote, 4, new { @Name = joke.Id, @class = "classname" })
+                @Html.RadioButtonFor(_ => joke.UserVote, 4, htmlAttributes)
             </td>
             <td>
-                @Html.RadioButtonFor(_ => joke.UserVote, 5, new { @Name = joke.Id, @class = "classname" })
+                @Html.RadioButtonFor(_ => joke.UserVote, 5, htmlAttributes)
             </td>
             <td>
                 <strong>@Html.DisplayFor(_ => joke.TotalVote)</strong>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ArrayOfJoke xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ArrayOfJoke xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Joke>
     <Id>1</Id>
     <Author>Ivča</Author>
@@ -7,7 +7,13 @@
     <JokeText>Je tlačenica v metre a mladá žena sa nechtiac dotkla neznámeho muža na  citlivom mieste.
 "Prepáčte, nechcela som," ospravedlňuje sa.
 "Slečna, ja som šachista, keď ste sa už raz dotkla figúrky, musíte s ňou hrať!"</JokeText>
-    <UserVotes />
+    <UserVotes>
+      <UserVote>
+        <Vote>1</Vote>
+        <UserName>HCG\roman.filip</UserName>
+      </UserVote>
+    </UserVotes>
+    <VotingClosed xsi:nil="true" />
   </Joke>
   <Joke>
     <Id>2</Id>
@@ -17,7 +23,13 @@
 "Ktorú máte namysli? Máme Barbie ide na dovolenku za 10 eur, Barbie upratuje za 15 eur, Barbie v kúpeľni za 20 eur a rozvedená Barbie za 150 eur. "
 To muža zarazí a pýta sa: "Prečo je Rozvedená Barbie tak drahá?"
 Predavačka poskytne zasvätenú odpoveď: "Pretože k rozvedenej Barbie patrí Kenov dom, Kenove auto, Kenov bazén ..."</JokeText>
-    <UserVotes />
+    <UserVotes>
+      <UserVote>
+        <Vote>4</Vote>
+        <UserName>HCG\roman.filip</UserName>
+      </UserVote>
+    </UserVotes>
+    <VotingClosed xsi:nil="true" />
   </Joke>
   <Joke>
     <Id>3</Id>
@@ -33,14 +45,26 @@ Muž s ťavou nacúva. Mechanik chytne ťave varlatá, vezme kladivo a buchne. �
 Muž stojí s údivom a hovorí"
 "To je síce fajn a čo ja?"
 "Nacúvajte si!"</JokeText>
-    <UserVotes />
+    <UserVotes>
+      <UserVote>
+        <Vote>3</Vote>
+        <UserName>HCG\roman.filip</UserName>
+      </UserVote>
+    </UserVotes>
+    <VotingClosed xsi:nil="true" />
   </Joke>
   <Joke>
     <Id>4</Id>
     <Author>Roman</Author>
     <Date>2016-04-21T00:00:00</Date>
     <JokeText>Psycholog mi řekl: "Napiš dopis člověku, který tě štve, a spal ho." Ok, ale co teď s tím dopisem?</JokeText>
-    <UserVotes />
+    <UserVotes>
+      <UserVote>
+        <Vote>5</Vote>
+        <UserName>HCG\roman.filip</UserName>
+      </UserVote>
+    </UserVotes>
+    <VotingClosed xsi:nil="true" />
   </Joke>
   <Joke>
     <Id>5</Id>
@@ -50,6 +74,7 @@ Muž stojí s údivom a hovorí"
 Říká druhému pilotovi: "Teď si dám kávu a pak přefiknu tu novou letušku." Letuška za ním běží, aby mu řekla, že má zapnutý mikrofon.
 Zastaví ji jeden cestující a povídá: "Kam běžíš, vždyť říkal, že si dá ještě kafe."</JokeText>
     <UserVotes />
+    <VotingClosed xsi:nil="true" />
   </Joke>
   <Joke>
     <Id>6</Id>
@@ -61,6 +86,7 @@ Muž mlčí. Dostane z druhé strany další facku.
 "Řekni! Budeš ještě chlastat?"
 "No tak jo," konečně povídá muž. "Nalej!"</JokeText>
     <UserVotes />
+    <VotingClosed xsi:nil="true" />
   </Joke>
   <Joke>
     <Id>7</Id>
@@ -69,6 +95,7 @@ Muž mlčí. Dostane z druhé strany další facku.
     <JokeText>Soudce se ptá pana Nováčka: "Pane Nováčku, proč jste vystřelil po své tchyni osmkrát?"
 "Protože jsem neměl víc nábojů."</JokeText>
     <UserVotes />
+    <VotingClosed xsi:nil="true" />
   </Joke>
   <Joke>
     <Id>8</Id>
@@ -78,5 +105,7 @@ Muž mlčí. Dostane z druhé strany další facku.
 "Dejte mi mladý muži tolik, na kolik si ceníte svou manželku."
 Muž chvíli váhá, vypadá to, že počítá, a pak podá faráři stovku.
 Farář se nejdřív zklamaně podívá na stovku, pak koukne na nevěstu a vrátí ženichovi padesátku.</JokeText>
+    <UserVotes />
+    <VotingClosed xsi:nil="true" />
   </Joke>
 </ArrayOfJoke>

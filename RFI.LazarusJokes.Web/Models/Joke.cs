@@ -46,5 +46,7 @@ namespace RFI.LazarusJokes.Web.Models
                 return VotesOfCurrentUser.Any() ? VotesOfCurrentUser[0].Vote : default(int?);
             }
         }
+
+        public bool? VotingClosed { get; set; }
     }
 }
