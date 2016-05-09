@@ -1,6 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfJoke xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Joke>
+    <Id>9</Id>
+    <Author>HCG\roman.filip</Author>
+    <Date>2016-05-09T00:00:00</Date>
+    <JokeText>test</JokeText>
+    <UserVotes>
+      <UserVote>
+        <Vote>1</Vote>
+        <UserName>HCG\roman.filip</UserName>
+      </UserVote>
+    </UserVotes>
+    <VotingClosed xsi:nil="true" />
+  </Joke>
+  <Joke>
+    <Id>10</Id>
+    <Author>HCG\roman.filip</Author>
+    <Date>2016-05-09T00:00:00</Date>
+    <JokeText>test2</JokeText>
+    <UserVotes>
+      <UserVote>
+        <Vote>4</Vote>
+        <UserName>HCG\roman.filip</UserName>
+      </UserVote>
+    </UserVotes>
+    <VotingClosed xsi:nil="true" />
+  </Joke>
+  <Joke>
+    <Id>11</Id>
+    <Author>HCG\roman.filip</Author>
+    <Date>2016-05-09T00:00:00</Date>
+    <JokeText>eee</JokeText>
+    <UserVotes>
+      <UserVote>
+        <Vote>1</Vote>
+        <UserName>HCG\roman.filip</UserName>
+      </UserVote>
+    </UserVotes>
+    <VotingClosed xsi:nil="true" />
+  </Joke>
+  <Joke>
     <Id>1</Id>
     <Author>Ivča</Author>
     <Date>2016-04-27T00:00:00</Date>

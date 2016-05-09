@@ -8,7 +8,7 @@ using System.Xml.Serialization;
 
 namespace RFI.LazarusJokes.Web.Controllers
 {
-    public class LazarusJokesController : Controller
+    public class JokesController : Controller
     {
         public ActionResult Jokes(JokesViewModel model)
         {
@@ -24,7 +24,7 @@ namespace RFI.LazarusJokes.Web.Controllers
             return View(model);
         }
 
-        // POST: LazarusJokes/AddJoke
+        // POST: Jokes/AddJoke
         [HttpPost]
         public ActionResult AddJoke(JokesViewModel model)
         {

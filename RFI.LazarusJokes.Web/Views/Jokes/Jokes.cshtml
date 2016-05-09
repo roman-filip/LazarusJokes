@@ -4,7 +4,7 @@
     ViewBag.Title = "Lazarské vtipy";
 }
 
-@using (Html.BeginForm("AddJoke", "LazarusJokes", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+@using (Html.BeginForm("AddJoke", "Jokes", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
 {
     @Html.AntiForgeryToken()
     <h4>Přidat vtip</h4>
@@ -119,7 +119,7 @@
                 var userVote = $(this).val();
 
                 if (rbChecked) {
-                    window.location.href = '@Html.Raw("/LazarusJokes/VoteForJoke?jokeId='+jokeId+'&userVote='+userVote");
+                    window.location.href = '@Html.Raw("/LazarusJokes/Jokes/VoteForJoke?jokeId='+jokeId+'&userVote='+userVote");
                 }
             });
         });

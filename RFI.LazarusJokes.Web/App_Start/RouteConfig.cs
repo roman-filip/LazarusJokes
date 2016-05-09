@@ -15,8 +15,8 @@ namespace RFI.LazarusJokes.Web
 
             routes.MapRoute(
                 name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "LazarusJokes", action = "Jokes", id = UrlParameter.Optional }
+                url: "LazarusJokes/{controller}/{action}/{id}",
+                defaults: new { controller = "Jokes", action = "Jokes", id = UrlParameter.Optional }
             );
         }
     }
