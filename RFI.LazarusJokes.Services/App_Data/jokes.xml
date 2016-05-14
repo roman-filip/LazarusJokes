@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfJoke xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Joke>
+    <Id>9</Id>
+    <Author>HCG\Jakub.Klos</Author>
+    <Date>2016-05-10T00:00:00</Date>
+    <JokeText>Týpek v baru pije pivo, přijde za ním blondýnka a ptá se: "Proč to piješ?" "No proto, že mě to dělá nesmrtelným. Však sleduj." - chlap se rozběhne, vyskočí z 8. poschodí, opráší se, vrátí se do baru a povídá: "Vidíš, nic se mi nestalo." Blondýnka: "To musím vyzkoušet." - napije se piva, vyskočí a zabije se. 
+Barman na to: "Ty si takový ocas, když si najebaný, Supermane!" 
+</JokeText>
+    <UserVotes>
+      <UserVote>
+        <Vote>5</Vote>
+        <UserName>HCG\Jakub.Klos</UserName>
+      </UserVote>
+    </UserVotes>
+    <VotingClosed xsi:nil="true" />
+  </Joke>
+  <Joke>
+    <Id>12</Id>
+    <Author>Simča</Author>
+    <Date>2016-05-04T00:00:00</Date>
+    <JokeText>Třetí třída jde na plavání. Plavčík se ptá celé třídy, jestli umí už někdo z nich plavat. Hlásí se malý Dimitrij, že "Já umím." Jenomže Dimitrij nemá ručičky, tak se to plavčíkovi moc nezdá. Ale Dimitrij ho ujišťuje, že to svede a opravdu umí velice dobře plavat. Plavčík teda ať ukáže, co umí. Míťa teda prokáže velice dobré plavecké schopnosti, a tak se ho plavčík zeptá: "Kde ses naučil tak plavat?"
+Dimitrij: "Mám veliké zkušenosti, každý víkend mě tatínek bere k moři, hodí mě do vody ze skály a já se musím dostat na břeh velice rychle."
+Plavčík: "No, to je teda dost krutá metoda, nemyslíš?"
+Míťa: "To plavání ani tak ne. Nejtěžší je ta část, kdy se musím dostat z igelitového pytle."</JokeText>
+    <UserVotes />
+    <VotingClosed xsi:nil="true" />
+  </Joke>
+  <Joke>
+    <Id>11</Id>
+    <Author>OFFICE\filip</Author>
+    <Date>2016-05-03T00:00:00</Date>
+    <JokeText>Nosit Crocsy je jako nechat si ho kouřit od chlapa...
+Moc příjemný, dokud se nekoukneš dolů a nevšimneš si jak moc je to teplý</JokeText>
+    <UserVotes />
+    <VotingClosed xsi:nil="true" />
+  </Joke>
+  <Joke>
+    <Id>10</Id>
+    <Author>Ondra</Author>
+    <Date>2016-05-02T00:00:00</Date>
+    <JokeText>Malý Pepíček doma hlásí mamince: Dneska jsme v tělocviku stali 5 minut na jedné noze. Jako čápi? Ptá se maminka. Ne, jako blbci, odpoví ji bezelstně chlapeček.</JokeText>
+    <UserVotes />
+    <VotingClosed xsi:nil="true" />
+  </Joke>
+  <Joke>
+    <Id>1</Id>
+    <Author>Ivča</Author>
+    <Date>2016-04-27T00:00:00</Date>
+    <JokeText>Je tlačenica v metre a mladá žena sa nechtiac dotkla neznámeho muža na  citlivom mieste.
+"Prepáčte, nechcela som," ospravedlňuje sa.
+"Slečna, ja som šachista, keď ste sa už raz dotkla figúrky, musíte s ňou hrať!"</JokeText>
+    <UserVotes>
+      <UserVote>
+        <Vote>3</Vote>
+        <UserName>HCG\Ondrej.Severnak</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>3</Vote>
+        <UserName>HCG\Tomas.Petrek</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>5</Vote>
+        <UserName>HCG\Jakub.Klos</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>3</Vote>
+        <UserName>OFFICE\janakova</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>4</Vote>
+        <UserName>OFFICE\sevcova</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>4</Vote>
+        <UserName>OFFICE\spacek</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>4</Vote>
+        <UserName>OFFICE\moutelik</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>3</Vote>
+        <UserName>OFFICE\michalovic</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>2</Vote>
+        <UserName>OFFICE\filip</UserName>
+      </UserVote>
+    </UserVotes>
+    <VotingClosed>true</VotingClosed>
+  </Joke>
+  <Joke>
+    <Id>2</Id>
+    <Author>Ivča</Author>
+    <Date>2016-04-27T00:00:00</Date>
+    <JokeText>Príde pán do obchodu a pýta sa: "Za koľko máte bábiku Barbie?"
+"Ktorú máte namysli? Máme Barbie ide na dovolenku za 10 eur, Barbie upratuje za 15 eur, Barbie v kúpeľni za 20 eur a rozvedená Barbie za 150 eur. "
+To muža zarazí a pýta sa: "Prečo je Rozvedená Barbie tak drahá?"
+Predavačka poskytne zasvätenú odpoveď: "Pretože k rozvedenej Barbie patrí Kenov dom, Kenove auto, Kenov bazén ..."</JokeText>
+    <UserVotes>
+      <UserVote>
+        <Vote>4</Vote>
+        <UserName>HCG\Ondrej.Severnak</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>2</Vote>
+        <UserName>HCG\Tomas.Petrek</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>4</Vote>
+        <UserName>HCG\Jakub.Klos</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>3</Vote>
+        <UserName>OFFICE\janakova</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>3</Vote>
+        <UserName>OFFICE\sevcova</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>4</Vote>
+        <UserName>OFFICE\spacek</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>4</Vote>
+        <UserName>OFFICE\moutelik</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>4</Vote>
+        <UserName>OFFICE\michalovic</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>3</Vote>
+        <UserName>OFFICE\filip</UserName>
+      </UserVote>
+    </UserVotes>
+    <VotingClosed>true</VotingClosed>
+  </Joke>
+  <Joke>
+    <Id>3</Id>
+    <Author>Tomáš</Author>
+    <Date>2016-04-22T00:00:00</Date>
+    <JokeText>Muž ide po púšti na ťave a zrazu ťava už prestane ísť. Muž sa rozhliadne a v diaľke vidí nápis "Ťaví servis".
+Horko ťažko dotiahne ťavu do servisu. Hneď vonku stojí mechanik:
+"Aký máte problém?"
+"Ťava mi akosi neide a neviem čo s ňou"
+"Tak nacúvajte k rampe"
+Muž s ťavou nacúva. Mechanik chytne ťave varlatá, vezme kladivo a buchne. Ťava vystrelí a zostane za ňou len prach.
+"Vidíte a už je opravená"
+Muž stojí s údivom a hovorí"
+"To je síce fajn a čo ja?"
+"Nacúvajte si!"</JokeText>
+    <UserVotes>
+      <UserVote>
+        <Vote>2</Vote>
+        <UserName>HCG\Ondrej.Severnak</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>4</Vote>
+        <UserName>HCG\Tomas.Petrek</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>4</Vote>
+        <UserName>HCG\Jakub.Klos</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>4</Vote>
+        <UserName>OFFICE\janakova</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>2</Vote>
+        <UserName>OFFICE\sevcova</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>5</Vote>
+        <UserName>OFFICE\spacek</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>3</Vote>
+        <UserName>OFFICE\moutelik</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>3</Vote>
+        <UserName>OFFICE\michalovic</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>4</Vote>
+        <UserName>OFFICE\filip</UserName>
+      </UserVote>
+    </UserVotes>
+    <VotingClosed>true</VotingClosed>
+  </Joke>
+  <Joke>
+    <Id>4</Id>
+    <Author>Roman</Author>
+    <Date>2016-04-21T00:00:00</Date>
+    <JokeText>Psycholog mi řekl: "Napiš dopis člověku, který tě štve, a spal ho." Ok, ale co teď s tím dopisem?</JokeText>
+    <UserVotes>
+      <UserVote>
+        <Vote>3</Vote>
+        <UserName>OFFICE\filip</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>2</Vote>
+        <UserName>HCG\Ondrej.Severnak</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>3</Vote>
+        <UserName>HCG\Tomas.Petrek</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>3</Vote>
+        <UserName>HCG\Jakub.Klos</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>2</Vote>
+        <UserName>OFFICE\janakova</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>3</Vote>
+        <UserName>OFFICE\sevcova</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>3</Vote>
+        <UserName>OFFICE\spacek</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>3</Vote>
+        <UserName>OFFICE\moutelik</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>3</Vote>
+        <UserName>OFFICE\michalovic</UserName>
+      </UserVote>
+    </UserVotes>
+    <VotingClosed>true</VotingClosed>
+  </Joke>
+  <Joke>
+    <Id>5</Id>
+    <Author>Simča</Author>
+    <Date>2016-04-20T00:00:00</Date>
+    <JokeText>Pilot v letadle informuje cestující, co mají dělat v případě nehody. Když skončí, neuvědomí si, že nechal zapnutý mikrofon.
+Říká druhému pilotovi: "Teď si dám kávu a pak přefiknu tu novou letušku." Letuška za ním běží, aby mu řekla, že má zapnutý mikrofon.
+Zastaví ji jeden cestující a povídá: "Kam běžíš, vždyť říkal, že si dá ještě kafe."</JokeText>
+    <UserVotes>
+      <UserVote>
+        <Vote>2</Vote>
+        <UserName>HCG\Ondrej.Severnak</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>3</Vote>
+        <UserName>HCG\Tomas.Petrek</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>5</Vote>
+        <UserName>HCG\Jakub.Klos</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>4</Vote>
+        <UserName>OFFICE\sevcova</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>3</Vote>
+        <UserName>OFFICE\spacek</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>4</Vote>
+        <UserName>OFFICE\moutelik</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>4</Vote>
+        <UserName>OFFICE\michalovic</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>3</Vote>
+        <UserName>OFFICE\filip</UserName>
+      </UserVote>
+    </UserVotes>
+    <VotingClosed>true</VotingClosed>
+  </Joke>
+  <Joke>
+    <Id>6</Id>
+    <Author>Miro</Author>
+    <Date>2016-04-19T00:00:00</Date>
+    <JokeText>Muž přijde opilý domů.
+Manželka mu ubalí facku a říká: "Budeš ještě chlastat?"
+Muž mlčí. Dostane z druhé strany další facku.
+"Řekni! Budeš ještě chlastat?"
+"No tak jo," konečně povídá muž. "Nalej!"</JokeText>
+    <UserVotes>
+      <UserVote>
+        <Vote>2</Vote>
+        <UserName>HCG\Ondrej.Severnak</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>3</Vote>
+        <UserName>HCG\Tomas.Petrek</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>4</Vote>
+        <UserName>OFFICE\janakova</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>5</Vote>
+        <UserName>HCG\Jakub.Klos</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>4</Vote>
+        <UserName>OFFICE\sevcova</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>4</Vote>
+        <UserName>OFFICE\spacek</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>4</Vote>
+        <UserName>OFFICE\moutelik</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>4</Vote>
+        <UserName>OFFICE\michalovic</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>4</Vote>
+        <UserName>OFFICE\filip</UserName>
+      </UserVote>
+    </UserVotes>
+    <VotingClosed>true</VotingClosed>
+  </Joke>
+  <Joke>
+    <Id>7</Id>
+    <Author>Kuba</Author>
+    <Date>2016-04-18T00:00:00</Date>
+    <JokeText>Soudce se ptá pana Nováčka: "Pane Nováčku, proč jste vystřelil po své tchyni osmkrát?"
+"Protože jsem neměl víc nábojů."</JokeText>
+    <UserVotes>
+      <UserVote>
+        <Vote>4</Vote>
+        <UserName>HCG\Ondrej.Severnak</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>3</Vote>
+        <UserName>HCG\Tomas.Petrek</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>2</Vote>
+        <UserName>OFFICE\janakova</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>4</Vote>
+        <UserName>HCG\Jakub.Klos</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>2</Vote>
+        <UserName>OFFICE\sevcova</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>3</Vote>
+        <UserName>OFFICE\spacek</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>4</Vote>
+        <UserName>OFFICE\moutelik</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>4</Vote>
+        <UserName>OFFICE\michalovic</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>3</Vote>
+        <UserName>OFFICE\filip</UserName>
+      </UserVote>
+    </UserVotes>
+    <VotingClosed>true</VotingClosed>
+  </Joke>
+  <Joke>
+    <Id>8</Id>
+    <Author>Peťa</Author>
+    <Date>2016-04-15T00:00:00</Date>
+    <JokeText>Po svatebním obřadu jde novopečený manžel vyrovnat účet s knězem a ptá se ho, kolik je dlužný?
+"Dejte mi mladý muži tolik, na kolik si ceníte svou manželku."
+Muž chvíli váhá, vypadá to, že počítá, a pak podá faráři stovku.
+Farář se nejdřív zklamaně podívá na stovku, pak koukne na nevěstu a vrátí ženichovi padesátku.</JokeText>
+    <UserVotes>
+      <UserVote>
+        <Vote>3</Vote>
+        <UserName>HCG\Ondrej.Severnak</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>3</Vote>
+        <UserName>HCG\Tomas.Petrek</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>4</Vote>
+        <UserName>OFFICE\janakova</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>4</Vote>
+        <UserName>HCG\Jakub.Klos</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>5</Vote>
+        <UserName>OFFICE\sevcova</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>3</Vote>
+        <UserName>OFFICE\spacek</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>4</Vote>
+        <UserName>OFFICE\moutelik</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>4</Vote>
+        <UserName>OFFICE\michalovic</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>4</Vote>
+        <UserName>OFFICE\filip</UserName>
+      </UserVote>
+    </UserVotes>
+    <VotingClosed>true</VotingClosed>
+  </Joke>
+</ArrayOfJoke>
