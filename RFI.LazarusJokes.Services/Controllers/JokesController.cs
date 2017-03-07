@@ -40,6 +40,12 @@ namespace RFI.LazarusJokes.Services.Controllers
             SaveJokes(jokes);
         }
 
+        [HttpPut]
+        public void VoteForJoke(long jokeId, [FromBody]string userName, [FromBody]int userVote)
+        {
+            // TODO
+        }
+
         // GET: LazarusJokes/api/jokes/closevoting?closingdate=2015-12-24
         [HttpGet]
         public void CloseVoting(DateTime closingDate)
