@@ -28,6 +28,18 @@ namespace RFI.LazarusJokes.Services.Controllers
             return joke;
         }
 
+        // POST: api/Jokes
+        [HttpPost]
+        public void AddJoke([FromBody]Joke joke)
+        {
+            var jokes = LoadJokes();
+
+            joke.Id = jokes.Any() ? jokes.Max(j => j.Id) + 1 : 1;
+            jokes.Add(joke);
+
+            SaveJokes(jokes);
+        }
+
         // GET: LazarusJokes/api/jokes/closevoting?closingdate=2015-12-24
         [HttpGet]
         public void CloseVoting(DateTime closingDate)
@@ -39,10 +51,9 @@ namespace RFI.LazarusJokes.Services.Controllers
 
 
 
-        // POST: api/Jokes
-        public void Post([FromBody]string value)
-        {
-        }
+
+
+
 
         // PUT: api/Jokes/5
         public void Put(int id, [FromBody]string value)
