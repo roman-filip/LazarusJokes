@@ -28,7 +28,7 @@ namespace RFI.LazarusJokes.Services.Controllers
             return joke;
         }
 
-        // POST: api/Jokes
+        // POST: LazarusJokes/api/Jokes
         [HttpPost]
         public void AddJoke([FromBody]Joke joke)
         {

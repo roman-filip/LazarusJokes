@@ -123,6 +123,9 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Connectors\ILazarusJokesServicesConnector.cs" />
+    <Compile Include="Connectors\LazarusJokesServicesConnector.cs" />
+    <Compile Include="Connectors\LazarusJokesServicesUri.cs" />
     <Compile Include="Controllers\JokesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
