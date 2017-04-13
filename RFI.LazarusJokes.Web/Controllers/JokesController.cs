@@ -14,10 +14,16 @@ namespace RFI.LazarusJokes.Web.Controllers
     {
         private readonly ILazarusJokesServicesConnector _connector;
 
-        public JokesController()
+        public JokesController() : this(new LazarusJokesServicesConnector())  // TODO - use DI instead of this workaround
         {
-            _connector = new LazarusJokesServicesConnector();
+
         }
+
+        public JokesController(ILazarusJokesServicesConnector connector)
+        {
+            _connector = connector;
+        }
+
         public async Task<ActionResult> Jokes(JokesViewModel model)
         {
             ViewBag.Message = "All jokes";

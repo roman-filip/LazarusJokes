@@ -4,7 +4,7 @@ using RFI.LazarusJokes.Web.Models;
 
 namespace RFI.LazarusJokes.Web.Connectors
 {
-    interface ILazarusJokesServicesConnector
+    public interface ILazarusJokesServicesConnector
     {
         Task<List<Joke>> LoadJokesAsync();
     }
