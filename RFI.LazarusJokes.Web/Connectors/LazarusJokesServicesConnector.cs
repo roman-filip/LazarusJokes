@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
-using System.Web;
 using RFI.LazarusJokes.Web.Models;
 
 namespace RFI.LazarusJokes.Web.Connectors
@@ -14,11 +12,17 @@ namespace RFI.LazarusJokes.Web.Connectors
         public async Task<List<Joke>> LoadJokesAsync()
         {
             var jokes = await RestUtils.CallGetMethodAsync<List<Joke>>(LazarusJokesServicesUri.LoadJokes);
-
             return jokes;
+        }
+
+        public Task AddJokeAsync(Joke joke)
+        {
+            throw new NotImplementedException();
         }
     }
 
+
+    // TODO extract class
     public static class RestUtils
     {
         public static Task<TResult> CallGetMethodAsync<TResult>(string methodUri)
@@ -26,7 +30,7 @@ namespace RFI.LazarusJokes.Web.Connectors
             return CallRestMethodAsync<TResult>(methodUri, (client) => client.GetAsync(methodUri));
         }
 
-        public static Task CallPosMethodAsync(string methodUri)
+        public static Task CallPostMethodAsync(string methodUri)
         {
 
 
