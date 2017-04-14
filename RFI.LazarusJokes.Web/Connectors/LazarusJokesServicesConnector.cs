@@ -15,9 +15,9 @@ namespace RFI.LazarusJokes.Web.Connectors
             return jokes;
         }
 
-        public Task AddJokeAsync(Joke joke)
+        public Task<Joke> AddJokeAsync(Joke joke)
         {
-            throw new NotImplementedException();
+            return RestUtils.CallPostMethodAsync<Joke, Joke>(LazarusJokesServicesUri.AddJoke, joke);
         }
     }
 
@@ -30,11 +30,9 @@ namespace RFI.LazarusJokes.Web.Connectors
             return CallRestMethodAsync<TResult>(methodUri, (client) => client.GetAsync(methodUri));
         }
 
-        public static Task CallPostMethodAsync(string methodUri)
+        public static Task<TResult> CallPostMethodAsync<TResult, TData>(string methodUri, TData data)
         {
-
-
-            return null;
+            return CallRestMethodAsync<TResult>(methodUri, (client) => client.PostAsJsonAsync(methodUri, data));
         }
 
         public static async Task<TResult> CallRestMethodAsync<TResult>(string methodUri, Func<HttpClient, Task<HttpResponseMessage>> func)
@@ -47,11 +45,11 @@ namespace RFI.LazarusJokes.Web.Connectors
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-                response = await func.Invoke(client);
+                response = await func.Invoke(client).ConfigureAwait(false);
             }
-            response.EnsureSuccessStatusCode();
+            response.EnsureSuccessStatusCode();   // TODO add functionality what gets error message from response
 
-            var result = await response.Content.ReadAsAsync<TResult>();
+            var result = await response.Content.ReadAsAsync<TResult>().ConfigureAwait(false);
             return result;
         }
     }

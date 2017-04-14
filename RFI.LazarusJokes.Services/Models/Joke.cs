@@ -6,6 +6,7 @@ using System.Xml.Serialization;
 
 namespace RFI.LazarusJokes.Services.Models
 {
+    // TODO - inherit from SimpleJoke???
     public class Joke
     {
         public long Id { get; set; }
@@ -48,5 +49,15 @@ namespace RFI.LazarusJokes.Services.Models
         }
 
         public bool? VotingClosed { get; set; }
+
+        public static Joke FromSimpleJoke(SimpleJoke simpleJoke)
+        {
+            return new Joke
+            {
+                JokeText = simpleJoke.Text,
+                Date = simpleJoke.Date,
+                Author = simpleJoke.Author
+            };
+        }
     }
 }

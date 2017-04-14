@@ -8,6 +8,6 @@ namespace RFI.LazarusJokes.Web.Connectors
     {
         Task<List<Joke>> LoadJokesAsync();
 
-        Task AddJokeAsync(Joke joke);
+        Task<Joke> AddJokeAsync(Joke joke);
     }
 }

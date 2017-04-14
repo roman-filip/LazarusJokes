@@ -45,14 +45,6 @@ namespace RFI.LazarusJokes.Web.Controllers
             if (ModelState.IsValid)
             {
                 await _connector.AddJokeAsync(model.NewJoke);
-
-
-
-                // TODO - remove following lines
-                var jokes = _connector.LoadJokesAsync().Result;
-                model.NewJoke.Id = jokes.Any() ? jokes.Max(joke => joke.Id) + 1 : 1;
-                jokes.Add(model.NewJoke);
-                SaveJokes(jokes);
             }
 
             return RedirectToAction("Jokes");

@@ -30,14 +30,21 @@ namespace RFI.LazarusJokes.Services.Controllers
 
         // POST: LazarusJokes/api/Jokes
         [HttpPost]
-        public void AddJoke([FromBody]Joke joke)
+        public HttpResponseMessage AddJoke([FromBody]SimpleJoke joke)
         {
-            var jokes = LoadJokes();
+            if (!ModelState.IsValid)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
+            }
 
-            joke.Id = jokes.Any() ? jokes.Max(j => j.Id) + 1 : 1;
-            jokes.Add(joke);
+            var newJoke = Joke.FromSimpleJoke(joke);
+            var jokes = LoadJokes();
+            newJoke.Id = jokes.Any() ? jokes.Max(j => j.Id) + 1 : 1;
+            jokes.Add(newJoke);
 
             SaveJokes(jokes);
+
+            return Request.CreateResponse(HttpStatusCode.OK);  // TODO - the Post method should return newly created object
         }
 
         [HttpPut]
@@ -73,7 +80,7 @@ namespace RFI.LazarusJokes.Services.Controllers
 
 
 
-
+        // TODO - extract following methods to Repository
         private List<Joke> LoadJokes()
         {
             if (!File.Exists(GetFilePath()))
