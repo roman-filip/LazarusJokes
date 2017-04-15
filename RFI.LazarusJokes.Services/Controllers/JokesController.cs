@@ -92,9 +92,6 @@ namespace RFI.LazarusJokes.Services.Controllers
             using (Stream reader = new FileStream(GetFilePath(), FileMode.Open))
             {
                 var jokes = (List<Joke>)serializer.Deserialize(reader);
-
-                var user = User.Identity.Name;
-                jokes.ForEach(joke => joke.VotesOfCurrentUser = joke.UserVotes.Where(vote => vote.UserName == user).ToList());
                 return jokes.OrderByDescending(joke => joke.Date).ToList();
             }
         }

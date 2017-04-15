@@ -33,7 +33,7 @@ namespace RFI.LazarusJokes.Web.Controllers
                 Author = User.Identity.Name,
                 Date = DateTime.Now.Date
             };
-            model.Jokes = await _connector.LoadJokesAsync();
+            model.Jokes = await LoadJokesAsync();
 
             return View(model);
         }
@@ -54,7 +54,7 @@ namespace RFI.LazarusJokes.Web.Controllers
         {
             var user = User.Identity.Name;
 
-            var jokes = _connector.LoadJokesAsync().Result;
+            var jokes = LoadJokesAsync().Result;
 
             var actualJoke = jokes.Single(joke => joke.Id == jokeId);
             var givenUserVote = actualJoke.UserVotes.SingleOrDefault(vote => vote.UserName == user);
@@ -84,6 +84,15 @@ namespace RFI.LazarusJokes.Web.Controllers
         private string GetFilePath()
         {
             return Server.MapPath("~/App_Data/jokes.xml");
+        }
+
+        private async Task<List<Joke>> LoadJokesAsync()
+        {
+            var user = User.Identity.Name;
+            var jokes = await _connector.LoadJokesAsync().ConfigureAwait(false);
+            jokes.ForEach(joke => joke.VotesOfCurrentUser = joke.UserVotes.Where(vote => vote.UserName == user).ToList());
+
+            return jokes;
         }
     }
 }

@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
-using System.Xml.Serialization;
 using Newtonsoft.Json;
 
 namespace RFI.LazarusJokes.Web.Models
@@ -38,8 +37,7 @@ namespace RFI.LazarusJokes.Web.Models
             }
         }
 
-        [XmlIgnore]
-        public List<UserVote> VotesOfCurrentUser { get; set; }
+        public List<UserVote> VotesOfCurrentUser { get; set; }  // TODO - why is it list???
 
         [JsonIgnore]   // TODO - remove this, SimpleJoke should be used instead of Joke
         public int? UserVote
