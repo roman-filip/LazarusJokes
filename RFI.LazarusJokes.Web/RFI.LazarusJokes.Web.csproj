@@ -131,6 +131,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Joke.cs" />
+    <Compile Include="Models\JokeSimple.cs" />
     <Compile Include="Models\JokesViewModel.cs" />
     <Compile Include="Models\UserVote.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

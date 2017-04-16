@@ -27,10 +27,10 @@
     </div>
 
     <div class="form-group">
-        @Html.LabelFor(model => model.NewJoke.JokeText, htmlAttributes: new { @class = "control-label col-md-2" })
+        @Html.LabelFor(model => model.NewJoke.Text, htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-10">
-            @Html.EditorFor(model => model.NewJoke.JokeText, new { htmlAttributes = new { @class = "form-control", style = "height:150px; max-width: 800px" } })
-            @Html.ValidationMessageFor(model => model.NewJoke.JokeText, "", new { @class = "text-danger" })
+            @Html.EditorFor(model => model.NewJoke.Text, new { htmlAttributes = new { @class = "form-control", style = "height:150px; max-width: 800px" } })
+            @Html.ValidationMessageFor(model => model.NewJoke.Text, "", new { @class = "text-danger" })
         </div>
     </div>
 
@@ -54,7 +54,7 @@
             @Html.DisplayNameFor(model => model.NewJoke.Date)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.NewJoke.JokeText)
+            @Html.DisplayNameFor(model => model.NewJoke.Text)
         </th>
         <th>Nejslabší<br />(1)</th>
         <th>Slabý<br />(2)</th>
@@ -84,7 +84,7 @@
                 @Html.DisplayFor(_ => joke.Date)
             </td>
             <td>
-                @Html.Raw(Html.DisplayFor(_ => joke.JokeText).ToString().Replace("\n", "<br />"))
+                @Html.Raw(Html.DisplayFor(_ => joke.Text).ToString().Replace("\n", "<br />"))
             </td>
             <td>
                 @Html.RadioButtonFor(_ => joke.UserVote, 1, htmlAttributes)
