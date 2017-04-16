@@ -30,14 +30,14 @@ namespace RFI.LazarusJokes.Services.Controllers
 
         // POST: LazarusJokes/api/Jokes
         [HttpPost]
-        public HttpResponseMessage AddJoke([FromBody]SimpleJoke joke)
+        public HttpResponseMessage AddJoke([FromBody]JokeSimple joke)
         {
             if (!ModelState.IsValid)
             {
                 return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
             }
 
-            var newJoke = Joke.FromSimpleJoke(joke);
+            var newJoke = Joke.FromJokeSimple(joke);
             var jokes = LoadJokes();
             newJoke.Id = jokes.Any() ? jokes.Max(j => j.Id) + 1 : 1;
             jokes.Add(newJoke);

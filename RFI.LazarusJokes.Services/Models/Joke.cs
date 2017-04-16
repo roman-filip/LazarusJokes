@@ -2,7 +2,7 @@
 
 namespace RFI.LazarusJokes.Services.Models
 {
-    public class Joke : SimpleJoke
+    public class Joke : JokeSimple
     {
         public long Id { get; set; }
 
@@ -10,13 +10,13 @@ namespace RFI.LazarusJokes.Services.Models
 
         public bool? VotingClosed { get; set; }
 
-        public static Joke FromSimpleJoke(SimpleJoke simpleJoke)
+        public static Joke FromJokeSimple(JokeSimple jokeSimple)
         {
             return new Joke
             {
-                Text = simpleJoke.Text,
-                Date = simpleJoke.Date,
-                Author = simpleJoke.Author
+                Text = jokeSimple.Text,
+                Date = jokeSimple.Date,
+                Author = jokeSimple.Author
             };
         }
     }

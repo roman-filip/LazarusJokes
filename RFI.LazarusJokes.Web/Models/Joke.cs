@@ -39,7 +39,7 @@ namespace RFI.LazarusJokes.Web.Models
 
         public List<UserVote> VotesOfCurrentUser { get; set; }  // TODO - why is it list???
 
-        [JsonIgnore]   // TODO - remove this, SimpleJoke should be used instead of Joke
+        [JsonIgnore]   // TODO - remove this, JokeSimple should be used instead of Joke
         public int? UserVote
         {
             get

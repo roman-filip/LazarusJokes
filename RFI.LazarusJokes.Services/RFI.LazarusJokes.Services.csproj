@@ -194,7 +194,7 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Joke.cs" />
-    <Compile Include="Models\SimpleJoke.cs" />
+    <Compile Include="Models\JokeSimple.cs" />
     <Compile Include="Models\UserVote.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />

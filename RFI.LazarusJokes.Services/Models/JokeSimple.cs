@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 
 namespace RFI.LazarusJokes.Services.Models
 {
-    public class SimpleJoke
+    public class JokeSimple
     {
         [Required]
         public string Author { get; set; }
