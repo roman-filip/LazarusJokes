@@ -28,7 +28,7 @@ namespace RFI.LazarusJokes.Web.Controllers
         {
             ViewBag.Message = "All jokes";
 
-            model.NewJoke = new Joke
+            model.NewJoke = new JokeSimple
             {
                 Author = User.Identity.Name,
                 Date = DateTime.Now.Date

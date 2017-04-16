@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
-using Newtonsoft.Json;
 
 namespace RFI.LazarusJokes.Web.Models
 {
@@ -12,7 +11,6 @@ namespace RFI.LazarusJokes.Web.Models
         public List<UserVote> UserVotes { get; set; }
 
         [Display(Name = "Celkový počet bodů")]
-        [JsonIgnore]
         public int? TotalVote
         {
             get
@@ -23,7 +21,6 @@ namespace RFI.LazarusJokes.Web.Models
 
         public List<UserVote> VotesOfCurrentUser { get; set; }  // TODO - why is it list???
 
-        [JsonIgnore]   // TODO - remove this, JokeSimple should be used instead of Joke
         public int? UserVote
         {
             get

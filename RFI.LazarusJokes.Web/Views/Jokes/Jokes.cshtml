@@ -48,13 +48,13 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.NewJoke.Author)
+            @Html.DisplayNameFor(model => Model.Jokes.First().Author)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.NewJoke.Date)
+            @Html.DisplayNameFor(model => Model.Jokes.First().Date)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.NewJoke.Text)
+            @Html.DisplayNameFor(model => Model.Jokes.First().Text)
         </th>
         <th>Nejslabší<br />(1)</th>
         <th>Slabý<br />(2)</th>
@@ -62,7 +62,7 @@
         <th>Dobrý<br />(4)</th>
         <th>Nejlepší<br />(5)</th>
         <th>
-            @Html.DisplayNameFor(model => model.NewJoke.TotalVote)
+            @Html.DisplayNameFor(model => Model.Jokes.First().TotalVote)
         </th>
     </tr>
 

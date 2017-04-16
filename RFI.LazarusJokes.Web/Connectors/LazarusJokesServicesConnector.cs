@@ -15,9 +15,9 @@ namespace RFI.LazarusJokes.Web.Connectors
             return jokes;
         }
 
-        public Task<Joke> AddJokeAsync(Joke joke)
+        public Task<Joke> AddJokeAsync(JokeSimple joke)
         {
-            return RestUtils.CallPostMethodAsync<Joke, Joke>(LazarusJokesServicesUri.AddJoke, joke);
+            return RestUtils.CallPostMethodAsync<Joke, JokeSimple>(LazarusJokesServicesUri.AddJoke, joke);
         }
     }
 
