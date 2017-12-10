@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfJoke xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Joke>
+    <Id>9</Id>
+    <Author>HCG\roman.filip</Author>
+    <Date>2016-05-09T00:00:00</Date>
+    <JokeText>test</JokeText>
+    <UserVotes>
+      <UserVote>
+        <Vote>1</Vote>
+        <UserName>HCG\roman.filip</UserName>
+      </UserVote>
+    </UserVotes>
+    <VotingClosed xsi:nil="true" />
+  </Joke>
+  <Joke>
+    <Id>10</Id>
+    <Author>HCG\roman.filip</Author>
+    <Date>2016-05-09T00:00:00</Date>
+    <JokeText>test2</JokeText>
+    <UserVotes>
+      <UserVote>
+        <Vote>4</Vote>
+        <UserName>HCG\roman.filip</UserName>
+      </UserVote>
+    </UserVotes>
+    <VotingClosed xsi:nil="true" />
+  </Joke>
+  <Joke>
+    <Id>11</Id>
+    <Author>HCG\roman.filip</Author>
+    <Date>2016-05-09T00:00:00</Date>
+    <JokeText>eee</JokeText>
+    <UserVotes>
+      <UserVote>
+        <Vote>1</Vote>
+        <UserName>HCG\roman.filip</UserName>
+      </UserVote>
+    </UserVotes>
+    <VotingClosed xsi:nil="true" />
+  </Joke>
+  <Joke>
+    <Id>1</Id>
+    <Author>Ivča</Author>
+    <Date>2016-04-27T00:00:00</Date>
+    <JokeText>Je tlačenica v metre a mladá žena sa nechtiac dotkla neznámeho muža na  citlivom mieste.
+"Prepáčte, nechcela som," ospravedlňuje sa.
+"Slečna, ja som šachista, keď ste sa už raz dotkla figúrky, musíte s ňou hrať!"</JokeText>
+    <UserVotes>
+      <UserVote>
+        <Vote>1</Vote>
+        <UserName>HCG\roman.filip</UserName>
+      </UserVote>
+    </UserVotes>
+    <VotingClosed xsi:nil="true" />
+  </Joke>
+  <Joke>
+    <Id>2</Id>
+    <Author>Ivča</Author>
+    <Date>2016-04-27T00:00:00</Date>
+    <JokeText>Príde pán do obchodu a pýta sa: "Za koľko máte bábiku Barbie?"
+"Ktorú máte namysli? Máme Barbie ide na dovolenku za 10 eur, Barbie upratuje za 15 eur, Barbie v kúpeľni za 20 eur a rozvedená Barbie za 150 eur. "
+To muža zarazí a pýta sa: "Prečo je Rozvedená Barbie tak drahá?"
+Predavačka poskytne zasvätenú odpoveď: "Pretože k rozvedenej Barbie patrí Kenov dom, Kenove auto, Kenov bazén ..."</JokeText>
+    <UserVotes>
+      <UserVote>
+        <Vote>4</Vote>
+        <UserName>HCG\roman.filip</UserName>
+      </UserVote>
+    </UserVotes>
+    <VotingClosed xsi:nil="true" />
+  </Joke>
+  <Joke>
+    <Id>3</Id>
+    <Author>Tomáš</Author>
+    <Date>2016-04-22T00:00:00</Date>
+    <JokeText>Muž ide po púšti na ťave a zrazu ťava už prestane ísť. Muž sa rozhliadne a v diaľke vidí nápis "Ťaví servis".
+Horko ťažko dotiahne ťavu do servisu. Hneď vonku stojí mechanik:
+"Aký máte problém?"
+"Ťava mi akosi neide a neviem čo s ňou"
+"Tak nacúvajte k rampe"
+Muž s ťavou nacúva. Mechanik chytne ťave varlatá, vezme kladivo a buchne. Ťava vystrelí a zostane za ňou len prach.
+"Vidíte a už je opravená"
+Muž stojí s údivom a hovorí"
+"To je síce fajn a čo ja?"
+"Nacúvajte si!"</JokeText>
+    <UserVotes>
+      <UserVote>
+        <Vote>3</Vote>
+        <UserName>HCG\roman.filip</UserName>
+      </UserVote>
+    </UserVotes>
+    <VotingClosed xsi:nil="true" />
+  </Joke>
+  <Joke>
+    <Id>4</Id>
+    <Author>Roman</Author>
+    <Date>2016-04-21T00:00:00</Date>
+    <JokeText>Psycholog mi řekl: "Napiš dopis člověku, který tě štve, a spal ho." Ok, ale co teď s tím dopisem?</JokeText>
+    <UserVotes>
+      <UserVote>
+        <Vote>5</Vote>
+        <UserName>HCG\roman.filip</UserName>
+      </UserVote>
+    </UserVotes>
+    <VotingClosed xsi:nil="true" />
+  </Joke>
+  <Joke>
+    <Id>5</Id>
+    <Author>Simča</Author>
+    <Date>2016-04-20T00:00:00</Date>
+    <JokeText>Pilot v letadle informuje cestující, co mají dělat v případě nehody. Když skončí, neuvědomí si, že nechal zapnutý mikrofon.
+Říká druhému pilotovi: "Teď si dám kávu a pak přefiknu tu novou letušku." Letuška za ním běží, aby mu řekla, že má zapnutý mikrofon.
+Zastaví ji jeden cestující a povídá: "Kam běžíš, vždyť říkal, že si dá ještě kafe."</JokeText>
+    <UserVotes />
+    <VotingClosed xsi:nil="true" />
+  </Joke>
+  <Joke>
+    <Id>6</Id>
+    <Author>Miro</Author>
+    <Date>2016-04-19T00:00:00</Date>
+    <JokeText>Muž přijde opilý domů.
+Manželka mu ubalí facku a říká: "Budeš ještě chlastat?"
+Muž mlčí. Dostane z druhé strany další facku.
+"Řekni! Budeš ještě chlastat?"
+"No tak jo," konečně povídá muž. "Nalej!"</JokeText>
+    <UserVotes />
+    <VotingClosed xsi:nil="true" />
+  </Joke>
+  <Joke>
+    <Id>7</Id>
+    <Author>Kuba</Author>
+    <Date>2016-04-18T00:00:00</Date>
+    <JokeText>Soudce se ptá pana Nováčka: "Pane Nováčku, proč jste vystřelil po své tchyni osmkrát?"
+"Protože jsem neměl víc nábojů."</JokeText>
+    <UserVotes />
+    <VotingClosed xsi:nil="true" />
+  </Joke>
+  <Joke>
+    <Id>8</Id>
+    <Author>Peťa</Author>
+    <Date>2016-04-15T00:00:00</Date>
+    <JokeText>Po svatebním obřadu jde novopečený manžel vyrovnat účet s knězem a ptá se ho, kolik je dlužný?
+"Dejte mi mladý muži tolik, na kolik si ceníte svou manželku."
+Muž chvíli váhá, vypadá to, že počítá, a pak podá faráři stovku.
+Farář se nejdřív zklamaně podívá na stovku, pak koukne na nevěstu a vrátí ženichovi padesátku.</JokeText>
+    <UserVotes />
+    <VotingClosed xsi:nil="true" />
+  </Joke>
+</ArrayOfJoke>

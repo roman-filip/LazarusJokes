@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 14 for Web
-VisualStudioVersion = 14.0.23107.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RFI.LazarusJokes.Web", "RFI.LazarusJokes.Web\RFI.LazarusJokes.Web.csproj", "{5ADA791C-1608-40A6-A63F-A35C77B4480D}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RFI.LazarusJokes.Services", "RFI.LazarusJokes.Services\RFI.LazarusJokes.Services.csproj", "{8EF87402-6E78-494D-86F9-2F59F0AD0DA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RFI.LazarusJokes.Web_old", "RFI.LazarusJokes.Web_old\RFI.LazarusJokes.Web_old.csproj", "{5ADA791C-1608-40A6-A63F-A35C77B4480D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RFI.LazarusJokes.Web", "RFI.LazarusJokes.Web\RFI.LazarusJokes.Web.csproj", "{9F901C28-E439-416F-A6E3-FB251CB83E9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotvvmApplication1", "DotvvmApplication1\DotvvmApplication1.csproj", "{575BDE1C-1BD6-4B19-B0B3-2DC0CBF4B146}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,16 +17,27 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5ADA791C-1608-40A6-A63F-A35C77B4480D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5ADA791C-1608-40A6-A63F-A35C77B4480D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5ADA791C-1608-40A6-A63F-A35C77B4480D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5ADA791C-1608-40A6-A63F-A35C77B4480D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8EF87402-6E78-494D-86F9-2F59F0AD0DA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8EF87402-6E78-494D-86F9-2F59F0AD0DA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8EF87402-6E78-494D-86F9-2F59F0AD0DA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8EF87402-6E78-494D-86F9-2F59F0AD0DA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5ADA791C-1608-40A6-A63F-A35C77B4480D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ADA791C-1608-40A6-A63F-A35C77B4480D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ADA791C-1608-40A6-A63F-A35C77B4480D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ADA791C-1608-40A6-A63F-A35C77B4480D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F901C28-E439-416F-A6E3-FB251CB83E9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F901C28-E439-416F-A6E3-FB251CB83E9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F901C28-E439-416F-A6E3-FB251CB83E9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F901C28-E439-416F-A6E3-FB251CB83E9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{575BDE1C-1BD6-4B19-B0B3-2DC0CBF4B146}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{575BDE1C-1BD6-4B19-B0B3-2DC0CBF4B146}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{575BDE1C-1BD6-4B19-B0B3-2DC0CBF4B146}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{575BDE1C-1BD6-4B19-B0B3-2DC0CBF4B146}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {185C1798-CDA9-4830-996C-01BE5B207388}
 	EndGlobalSection
 EndGlobal
