@@ -28,6 +28,51 @@ namespace RFI.LazarusJokes.Services.Controllers
             return joke;
         }
 
+        // POST: LazarusJokes/api/jokes
+        [HttpPost]
+        public HttpResponseMessage AddJoke([FromBody]JokeSimple joke)
+        {
+            if (!ModelState.IsValid)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
+            }
+
+            var newJoke = Joke.FromJokeSimple(joke);
+            var jokes = LoadJokes();
+            newJoke.Id = jokes.Any() ? jokes.Max(j => j.Id) + 1 : 1;
+            jokes.Add(newJoke);
+
+            SaveJokes(jokes);
+
+            return Request.CreateResponse(HttpStatusCode.OK);  // TODO - the Post method should return newly created object
+        }
+
+        // PUT: LazarusJokes/api/jokes/1
+        [HttpPut]
+        [Route("LazarusJokes/api/jokes/{jokeId:long}")]
+        public HttpResponseMessage VoteForJoke([FromUri]long jokeId, [FromBody]UserVote userVote)
+        {
+            if (!ModelState.IsValid)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
+            }
+
+            var jokes = LoadJokes();
+
+            var joke = jokes.Single(j => j.Id == jokeId);
+            var givenUserVote = joke.UserVotes.SingleOrDefault(vote => vote.UserName == userVote.UserName);
+            if (givenUserVote == null)
+            {
+                givenUserVote = new UserVote { UserName = userVote.UserName };
+                joke.UserVotes.Add(givenUserVote);
+            }
+            givenUserVote.Vote = userVote.Vote;
+
+            SaveJokes(jokes);
+
+            return Request.CreateResponse(HttpStatusCode.OK);
+        }
+
         // GET: LazarusJokes/api/jokes/closevoting?closingdate=2015-12-24
         [HttpGet]
         public void CloseVoting(DateTime closingDate)
@@ -39,24 +84,8 @@ namespace RFI.LazarusJokes.Services.Controllers
 
 
 
-        // POST: api/Jokes
-        public void Post([FromBody]string value)
-        {
-        }
 
-        // PUT: api/Jokes/5
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE: api/Jokes/5
-        public void Delete(int id)
-        {
-        }
-
-
-
-
+        // TODO - extract following methods to Repository
         private List<Joke> LoadJokes()
         {
             if (!File.Exists(GetFilePath()))
@@ -68,9 +97,6 @@ namespace RFI.LazarusJokes.Services.Controllers
             using (Stream reader = new FileStream(GetFilePath(), FileMode.Open))
             {
                 var jokes = (List<Joke>)serializer.Deserialize(reader);
-
-                var user = User.Identity.Name;
-                jokes.ForEach(joke => joke.VotesOfCurrentUser = joke.UserVotes.Where(vote => vote.UserName == user).ToList());
                 return jokes.OrderByDescending(joke => joke.Date).ToList();
             }
         }

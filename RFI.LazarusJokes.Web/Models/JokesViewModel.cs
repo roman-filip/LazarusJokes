@@ -4,7 +4,7 @@ namespace RFI.LazarusJokes.Web.Models
 {
     public class JokesViewModel
     {
-        public Joke NewJoke { get; set; }
+        public JokeSimple NewJoke { get; set; }
 
         public IEnumerable<Joke> Jokes { get; set; }
     }

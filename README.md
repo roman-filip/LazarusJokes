@@ -3,5 +3,15 @@ This is simple **ASP .NET MVC** application for administration of jokes from dai
 
 ***
 
-#### RFI.LazarusJokes.Web
-This project contains UI of the application.
+## Change log:
+* v2
+  * Web application now loads jokes via rest from service application
+
+***
+
+## Modules:
+* #### RFI.LazarusJokes.Web
+  * This module contains UI of the application.
+
+* #### RFI.LazarusJokes.Services
+  * This module contains business logic of the application.

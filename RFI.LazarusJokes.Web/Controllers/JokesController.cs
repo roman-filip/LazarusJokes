@@ -1,80 +1,64 @@
-﻿using RFI.LazarusJokes.Web.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Web.Mvc;
 using System.Xml.Serialization;
+using RFI.LazarusJokes.Web.Connectors;
+using RFI.LazarusJokes.Web.Models;
 
 namespace RFI.LazarusJokes.Web.Controllers
 {
     public class JokesController : Controller
     {
-        public ActionResult Jokes(JokesViewModel model)
+        private readonly ILazarusJokesServicesConnector _connector;
+
+        public JokesController() : this(new LazarusJokesServicesConnector())  // TODO - use DI instead of this workaround
+        {
+
+        }
+
+        public JokesController(ILazarusJokesServicesConnector connector)
+        {
+            _connector = connector;
+        }
+
+        public async Task<ActionResult> Jokes(JokesViewModel model)
         {
             ViewBag.Message = "All jokes";
 
-            model.NewJoke = new Joke
+            model.NewJoke = new JokeSimple
             {
                 Author = User.Identity.Name,
                 Date = DateTime.Now.Date
             };
-            model.Jokes = LoadJokes();
+            model.Jokes = await LoadJokesAsync();
 
             return View(model);
         }
 
         // POST: Jokes/AddJoke
         [HttpPost]
-        public ActionResult AddJoke(JokesViewModel model)
+        public async Task<ActionResult> AddJoke(JokesViewModel model)
         {
             if (ModelState.IsValid)
             {
-                var jokes = LoadJokes();
-                model.NewJoke.Id = jokes.Any() ? jokes.Max(joke => joke.Id) + 1 : 1;
-                jokes.Add(model.NewJoke);
-                SaveJokes(jokes);
+                await _connector.AddJokeAsync(model.NewJoke);
             }
 
             return RedirectToAction("Jokes");
         }
 
-        public ActionResult VoteForJoke(long jokeId, int userVote)
+        public async Task<ActionResult> VoteForJoke(long jokeId, int userVote)
         {
-            var user = User.Identity.Name;
-
-            var jokes = LoadJokes();
-
-            var actualJoke = jokes.Single(joke => joke.Id == jokeId);
-            var givenUserVote = actualJoke.UserVotes.SingleOrDefault(vote => vote.UserName == user);
-            if (givenUserVote == null)
+            if (ModelState.IsValid)
             {
-                givenUserVote = new UserVote { UserName = user };
-                actualJoke.UserVotes.Add(givenUserVote);
-            }
-            givenUserVote.Vote = userVote;
-
-            SaveJokes(jokes);
-
-            return RedirectToAction("Jokes");
-        }
-
-        private List<Joke> LoadJokes()
-        {
-            if (!System.IO.File.Exists(GetFilePath()))
-            {
-                return new List<Joke>();
-            }
-
-            var serializer = new XmlSerializer(typeof(List<Joke>));
-            using (Stream reader = new FileStream(GetFilePath(), FileMode.Open))
-            {
-                var jokes = (List<Joke>)serializer.Deserialize(reader);
-
                 var user = User.Identity.Name;
-                jokes.ForEach(joke => joke.VotesOfCurrentUser = joke.UserVotes.Where(vote => vote.UserName == user).ToList());
-                return jokes.OrderByDescending(joke => joke.Date).ToList();
+                await _connector.VoteForJokeAcync(jokeId, new UserVote { UserName = user, Vote = userVote });
             }
+
+            return RedirectToAction("Jokes");
         }
 
         private void SaveJokes(IEnumerable<Joke> jokes)
@@ -89,6 +73,15 @@ namespace RFI.LazarusJokes.Web.Controllers
         private string GetFilePath()
         {
             return Server.MapPath("~/App_Data/jokes.xml");
+        }
+
+        private async Task<List<Joke>> LoadJokesAsync()
+        {
+            var user = User.Identity.Name;
+            var jokes = await _connector.LoadJokesAsync().ConfigureAwait(false);
+            jokes.ForEach(joke => joke.VotesOfCurrentUser = joke.UserVotes.Where(vote => vote.UserName == user).ToList());
+
+            return jokes;
         }
     }
 }
