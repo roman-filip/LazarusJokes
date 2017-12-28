@@ -7,5 +7,7 @@
         public const string LoadJokes = _commonPrefix;
 
         public const string AddJoke = _commonPrefix;
+
+        public const string VoteForJoke = _commonPrefix;
     }
 }

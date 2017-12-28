@@ -19,6 +19,11 @@ namespace RFI.LazarusJokes.Web.Connectors
         {
             return RestUtils.CallPostMethodAsync<Joke, JokeSimple>(LazarusJokesServicesUri.AddJoke, joke);
         }
+
+        public Task VoteForJokeAcync(long jokeId, UserVote userVote)
+        {
+            return RestUtils.CallPutMethodAsync<object>($"{LazarusJokesServicesUri.VoteForJoke}/{jokeId}", userVote);
+        }
     }
 
 
@@ -33,6 +38,11 @@ namespace RFI.LazarusJokes.Web.Connectors
         public static Task<TResult> CallPostMethodAsync<TResult, TData>(string methodUri, TData data)
         {
             return CallRestMethodAsync<TResult>(methodUri, (client) => client.PostAsJsonAsync(methodUri, data));
+        }
+
+        public static Task<TResult> CallPutMethodAsync<TResult>(string methodUri, object data)
+        {
+            return CallRestMethodAsync<TResult>(methodUri, (client) => client.PutAsJsonAsync(methodUri, data));
         }
 
         public static async Task<TResult> CallRestMethodAsync<TResult>(string methodUri, Func<HttpClient, Task<HttpResponseMessage>> func)

@@ -50,24 +50,13 @@ namespace RFI.LazarusJokes.Web.Controllers
             return RedirectToAction("Jokes");
         }
 
-        public ActionResult VoteForJoke(long jokeId, int userVote)
+        public async Task<ActionResult> VoteForJoke(long jokeId, int userVote)
         {
-            var user = User.Identity.Name;
-
-            var jokes = LoadJokesAsync().Result;
-
-            var actualJoke = jokes.Single(joke => joke.Id == jokeId);
-            var givenUserVote = actualJoke.UserVotes.SingleOrDefault(vote => vote.UserName == user);
-            if (givenUserVote == null)
+            if (ModelState.IsValid)
             {
-                givenUserVote = new UserVote { UserName = user };
-                actualJoke.UserVotes.Add(givenUserVote);
+                var user = User.Identity.Name;
+                await _connector.VoteForJokeAcync(jokeId, new UserVote { UserName = user, Vote = userVote });
             }
-            givenUserVote.Vote = userVote;
-
-            SaveJokes(jokes);
-
-            //xxxx
 
             return RedirectToAction("Jokes");
         }

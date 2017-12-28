@@ -1,6 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfJoke xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Joke>
+    <Author>HCG\Roman.Filip</Author>
+    <Date>2017-12-28T00:00:00</Date>
+    <JokeText>sggdfg</JokeText>
+    <Id>13</Id>
+    <UserVotes>
+      <UserVote>
+        <Vote>1</Vote>
+        <UserName>HCG\Roman.Filip</UserName>
+      </UserVote>
+    </UserVotes>
+    <VotingClosed xsi:nil="true" />
+  </Joke>
+  <Joke>
+    <Author>HCG\Roman.Filip</Author>
+    <Date>2017-12-28T00:00:00</Date>
+    <JokeText>rthrth</JokeText>
+    <Id>14</Id>
+    <UserVotes>
+      <UserVote>
+        <Vote>2</Vote>
+        <UserName>HCG\Roman.Filip</UserName>
+      </UserVote>
+    </UserVotes>
+    <VotingClosed xsi:nil="true" />
+  </Joke>
+  <Joke>
+    <Author>HCG\Roman.Filip</Author>
+    <Date>2017-12-28T00:00:00</Date>
+    <JokeText>safsdf</JokeText>
+    <Id>15</Id>
+    <UserVotes>
+      <UserVote>
+        <Vote>3</Vote>
+        <UserName>HCG\Roman.Filip</UserName>
+      </UserVote>
+    </UserVotes>
+    <VotingClosed xsi:nil="true" />
+  </Joke>
+  <Joke>
+    <Author>HCG\Roman.Filip</Author>
+    <Date>2017-12-28T00:00:00</Date>
+    <JokeText>asd</JokeText>
+    <Id>16</Id>
+    <UserVotes>
+      <UserVote>
+        <Vote>4</Vote>
+        <UserName>HCG\Roman.Filip</UserName>
+      </UserVote>
+    </UserVotes>
+    <VotingClosed xsi:nil="true" />
+  </Joke>
+  <Joke>
     <Author>HCG\Jakub.Klos</Author>
     <Date>2016-05-10T00:00:00</Date>
     <JokeText>Týpek v baru pije pivo, přijde za ním blondýnka a ptá se: "Proč to piješ?" "No proto, že mě to dělá nesmrtelným. Však sleduj." - chlap se rozběhne, vyskočí z 8. poschodí, opráší se, vrátí se do baru a povídá: "Vidíš, nic se mi nestalo." Blondýnka: "To musím vyzkoušet." - napije se piva, vyskočí a zabije se. 
@@ -11,6 +63,10 @@ Barman na to: "Ty si takový ocas, když si najebaný, Supermane!"
       <UserVote>
         <Vote>5</Vote>
         <UserName>HCG\Jakub.Klos</UserName>
+      </UserVote>
+      <UserVote>
+        <Vote>5</Vote>
+        <UserName>HCG\Roman.Filip</UserName>
       </UserVote>
     </UserVotes>
     <VotingClosed xsi:nil="true" />
