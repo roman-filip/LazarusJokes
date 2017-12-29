@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RFI.LazarusJokes.Services",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RFI.LazarusJokes.Web_old", "RFI.LazarusJokes.Web_old\RFI.LazarusJokes.Web_old.csproj", "{5ADA791C-1608-40A6-A63F-A35C77B4480D}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RFI.LazarusJokes.Web", "RFI.LazarusJokes.Web\RFI.LazarusJokes.Web.csproj", "{07004C53-B237-4341-85B9-829F131F65DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{5ADA791C-1608-40A6-A63F-A35C77B4480D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5ADA791C-1608-40A6-A63F-A35C77B4480D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5ADA791C-1608-40A6-A63F-A35C77B4480D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07004C53-B237-4341-85B9-829F131F65DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07004C53-B237-4341-85B9-829F131F65DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07004C53-B237-4341-85B9-829F131F65DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07004C53-B237-4341-85B9-829F131F65DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
