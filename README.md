@@ -4,8 +4,10 @@ This is simple **ASP .NET MVC** application for administration of jokes from dai
 ***
 
 ## Change log:
+* v3
+  * Web projectd converted to .NET Core and added DotVVM framework
 * v2
-  * Web application now loads jokes via rest from service application
+  * Web application now loads jokes via REST from service application
 
 ***
 
